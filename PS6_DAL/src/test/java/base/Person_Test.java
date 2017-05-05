@@ -52,8 +52,8 @@ public class Person_Test {
 		assertTrue(!(p1.getCity().equals(p2.getCity())));
 		
 		//test delete
-		//PersonDAL.deletePerson(p1.getPersonID());
-		//assertTrue(PersonDAL.getPerson(p1.getPersonID()) == null);
+		PersonDAL.deletePerson(p1.getPersonID());
+		assertTrue(PersonDAL.getPerson(p1.getPersonID()) == null);
 		
 		//nothing left
 		
